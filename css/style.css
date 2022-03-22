@@ -1,7 +1,64 @@
 @font-face {
-  font-family: 'Lato';
-  src: url(../assets/fonts/Lato-Light.eot), url(../assets/fonts/Lato-Light.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/Lato-Light.woff) format("woff"), url(../assets/fonts/Lato-Light.ttf) format("truetype");
+  font-family: 'LatoLight';
+  src: url("../assets/fonts/Lato-Light.eot"), url("../assets/fonts/Lato-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Lato-Light.woff") format("woff"), url("../assets/fonts/Lato-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoBlack';
+  src: url("../assets/fonts/Lato-Black.eot"), url("../assets/fonts/Lato-Black.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Lato-Black.woff") format("woff"), url("../assets/fonts/Lato-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  font-family: 'LatoLight';
+  font-size: 13px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: #222222;
+}
+
+.wrap {
+  width: 1140px;
+}
+
+.logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 27px;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.logo p {
+  margin-left: 10px;
+  margin-bottom: 0;
+  color: #222222;
+}
+
+.logo span {
+  font-family: LatoBlack;
+  color: #f16d7f;
+}
+
+.select {
+  width: 100px;
+  height: 38px;
+  font-family: 'LatoLight';
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  color: #222222;
 }
 /*# sourceMappingURL=style.css.map */
