@@ -28,8 +28,14 @@ a {
 .container {
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 100px;
+      grid-template-rows: 100px;
   -ms-grid-columns: (auto)[4];
       grid-template-columns: repeat(4, auto);
+  gap: 2%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo a {
@@ -161,6 +167,7 @@ a {
 
 .cart {
   width: 32px;
+  height: 100%;
   background: url(../assets/img/cart.png) no-repeat center;
 }
 /*# sourceMappingURL=style.css.map */
