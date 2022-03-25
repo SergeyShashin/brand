@@ -26,13 +26,22 @@ a {
 }
 
 .container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 100px;
-      grid-template-rows: 100px;
-  -ms-grid-columns: (auto)[4];
-      grid-template-columns: repeat(4, auto);
-  gap: 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -41,28 +50,20 @@ a {
           align-items: center;
 }
 
-@media (max-width: 991px) {
-  .container {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -ms-grid-rows: 100px;
-        grid-template-rows: 100px;
-    -ms-grid-columns: (auto)[3];
-        grid-template-columns: repeat(3, auto);
-  }
+.container__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media (max-width: 576px) {
-  .container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-grid-rows: (80px)[2];
-        grid-template-rows: repeat(2, 80px);
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
+.logo {
+  margin-right: 35px;
 }
 
 .logo a {
@@ -119,13 +120,14 @@ a {
 }
 
 .details-ping {
+  width: 130px;
+  height: 38px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
   background: #f16d7f;
   font-family: 'LatoLight';
   font-size: 15px;
@@ -145,6 +147,10 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.summary__ping {
+  color: #222222;
 }
 
 .control-down {
@@ -178,6 +184,7 @@ a {
 
 .input-search {
   padding: 0 10px;
+  width: 282px;
   height: 38px;
   background-color: #ffffff;
   border: 1px solid #e6e6e6;
@@ -197,7 +204,8 @@ a {
 
 .cart {
   width: 32px;
-  height: 100%;
+  height: 38px;
+  margin-right: 25px;
   background: url(../assets/img/cart.png) no-repeat center;
 }
 /*# sourceMappingURL=style.css.map */
