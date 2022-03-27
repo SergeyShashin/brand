@@ -124,9 +124,6 @@ a {
 
 .logo {
   margin-right: 35px;
-}
-
-.logo a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
