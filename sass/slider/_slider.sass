@@ -4,7 +4,7 @@
   display: flex
   align-items: center
   &__content
-    // height: 92px
+    height: 92px
     border-left: 12px solid #f16d7f
     padding-left: 10px
     font-family: 'LatoBlack'
@@ -16,9 +16,11 @@
     flex-direction: column
     justify-content: flex-start
     h2
+      line-height: 52px
       display: block
       margin: 0
       font-size: 60px
+      line-height: 50px
     p
       display: block
       margin: 0
@@ -30,21 +32,28 @@
   .slider
     background-position-x: -450px
     &__content
+      height: 67px
       h2
         font-size: 3rem
+        line-height: 40px
       p 
         font-size: 1rem
+        line-height: 42px
+
 @media (max-width: 576px)
   .slider
     height: 400px
     align-items: start
     background-size: cover
-    background-position: -300px 0px
+    background-position: -340px 0px
     &__content
+      height: 65px
       margin-top: 30px
       h2
         font-size: 2.5rem
+        line-height: 35px
       p 
         font-size: 0.8rem
+        line-height: 49px
 
 
