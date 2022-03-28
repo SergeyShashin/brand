@@ -169,8 +169,13 @@ a {
 }
 
 .logo span {
-  font-family: LatoBlack;
+  font-family: 'LatoBlack';
   color: #f16d7f;
+}
+
+.logo:hover {
+  -webkit-filter: contrast(100%) brightness(0.9);
+          filter: contrast(100%) brightness(0.9);
 }
 
 .search {
@@ -193,6 +198,10 @@ a {
   font-weight: 300;
   letter-spacing: 0.025em;
   color: #222222;
+}
+
+.details:hover {
+  border: 1px solid #222222;
 }
 
 .details[open] summary {
@@ -226,6 +235,10 @@ a {
   line-height: 32px;
   font-weight: 400;
   color: #ffffff;
+}
+
+.details-ping:hover {
+  border: 1px solid #222222;
 }
 
 .details-ping[open] summary {
@@ -288,6 +301,10 @@ a {
   border-right: none;
 }
 
+.input-search:hover {
+  border: 1px solid #222222;
+}
+
 @media (max-width: 560px) {
   .input-search {
     width: 100%;
@@ -316,6 +333,12 @@ a {
   border: none;
 }
 
+.button:hover {
+  background: #ffffff;
+  color: #f16d7f;
+  border: 1px solid #f16d7f;
+}
+
 .button-search {
   width: 35px;
   height: 38px;
@@ -324,6 +347,10 @@ a {
   border-radius: 0px 3px 3px 0px;
   background: url(../assets/img/search.svg) no-repeat center;
   background-size: 25px;
+}
+
+.button-search:hover {
+  border: 1px solid #222222;
 }
 
 .button-add-to-cart {
@@ -347,6 +374,11 @@ a {
   height: 38px;
   margin-right: 25px;
   background: url(../assets/img/cart.png) no-repeat center;
+}
+
+.cart:hover {
+  -webkit-filter: invert(75%);
+          filter: invert(75%);
 }
 
 @media (max-width: 480px) {
