@@ -1,12 +1,12 @@
 .category
   padding: 100px 0
   display: grid
-  justify-content: center
+  justify-content: space-between
   grid-template-columns: repeat(2, auto)
   grid-template-rows: repeat(3, auto)
   grid-gap: 20px
   img
-    width: 550px
+    width: 100%
   &-link
     display: block
     position: relative
@@ -37,11 +37,9 @@
       align-items: center
       font-size: 30px
       color: #f16d7f
-    
+
 @media (max-width: 992px)
-  .category
-    img
-      width: 410px
+  .category    
     .category-link-header
       h3
         font-size: 0.7rem
@@ -50,9 +48,7 @@
 
 @media (max-width: 768px)
   .category
-    padding: 50px 0
-    img
-      width: 250px
+    padding: 50px 0    
     .category-link-header
       padding: 10px 15px
       h3
@@ -64,9 +60,7 @@
   .category
     grid-template-columns: 100%
     grid-template-rows: repeat(4, auto)
-    justify-items: center
-    img
-      width: 100%
+    justify-items: center    
     &-link1
       grid-row: 1/1
     &-link4
