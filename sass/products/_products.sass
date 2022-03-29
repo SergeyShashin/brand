@@ -2,9 +2,21 @@
   display: grid
   grid-template-columns: repeat(auto-fill, 261px)
   grid-gap: 35px
-  justify-content: center
+  justify-content: space-between
   &__button-wrap
     margin: 50px 0
     display: flex
     justify-content: center
     width: 100%
+
+@media (max-width: 768px)
+  .products
+    justify-content: center
+    
+@media (max-width: 576px)
+  .products
+    justify-content: center
+
+
+
+
