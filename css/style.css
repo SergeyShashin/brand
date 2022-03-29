@@ -674,14 +674,6 @@ a {
   }
 }
 
-@media (max-width: 576px) {
-  .products {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
 .product__img {
   position: relative;
   background: #e9e9e9;
@@ -738,5 +730,74 @@ a {
 
 .product:hover .button-add-to-cart {
   display: block;
+}
+
+.banner {
+  padding: 100px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-items: center;
+}
+
+.banner__img {
+  position: relative;
+}
+
+.banner__offer {
+  position: absolute;
+  left: 3%;
+  top: 25%;
+  font-family: 'LatoBold';
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #ffffff;
+}
+
+.banner__offer h2 {
+  font-size: 53.7px;
+}
+
+.banner__offer p {
+  font-size: 32.2px;
+}
+
+.banner__offer span {
+  color: #f16d7f;
+}
+
+.banner__benefits {
+  background: #222224;
+}
+
+.banner .benefit {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  justify-items: center;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+}
+
+.banner .benefit__text h3 {
+  font-family: 'LatoBold';
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  color: #fbfbfb;
+}
+
+.banner .benefit__text p {
+  text-align: justify;
+  width: 70%;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  color: #fbfbfb;
 }
 /*# sourceMappingURL=style.css.map */
