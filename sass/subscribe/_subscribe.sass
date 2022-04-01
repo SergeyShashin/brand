@@ -1,17 +1,22 @@
-.subscribe
+.wrap-subscribe
   margin-bottom: 100px
-  height: 438px
   background: url(../assets/img/surfer-bg.png) no-repeat
+  background-size: cover
+.subscribe
+  height: 438px
   display: grid
   grid-template-columns: 1fr 1fr
+  align-items: center
+  justify-items: center
   &__slider
+    height: 100%
     border-right: 1px solid #ffffff
     display: grid
-    grid-template-columns: 1fr 3fr
+    grid-template-columns: 1fr 4fr
     align-content: center
     align-items: start
     justify-items: center
-    padding: 0 50px 0 50px
+    padding: 0 25px
     grid-gap: 20px
     .text-and-control
       p
@@ -44,5 +49,37 @@
         background: #d6d6d6
       .bg-ping
         background: #f16d7f
-
   &__form-send-email
+    text-align: center
+    padding: 0 25px
+    h3
+      font-size: 24px
+      font-weight: 400
+      text-transform: uppercase
+      letter-spacing: 0.025em
+      color: #222224
+    p
+      font-size: 14px
+      text-transform: none
+      font-weight: 400
+      letter-spacing: 0.025em
+      color: #222224
+
+@media (max-width: 768px)
+  .subscribe
+    grid-template-columns: 1fr
+    grid-template-rows: repeat(2, auto)
+    align-items: start
+    &__slider
+      border-right: none
+
+@media (max-width: 576px)
+  .subscribe
+    height: 570px
+    &__slider
+      grid-template-columns: 1fr
+      grid-template-rows: repeat(2, auto)
+      .text-and-control
+        text-align: center
+      .control
+        justify-content: center
