@@ -1091,4 +1091,31 @@ a {
 .footer__bottom {
   background: #e6e6e6;
 }
+
+.footer .wrap-copiright-social {
+  height: 79px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (auto)[auto-fill];
+      grid-template-rows: repeat(auto-fill, auto);
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .wrap-copiright-social h3 {
+  font-size: 16px;
+  line-height: 42px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #7a7a7a;
+}
+
+.footer .wrap-copiright-social .social a {
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+}
 /*# sourceMappingURL=style.css.map */
