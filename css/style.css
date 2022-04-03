@@ -559,6 +559,12 @@ a {
   color: #222222;
 }
 
+@media (max-width: 768px) {
+  .cart-dropdown {
+    top: 45px;
+  }
+}
+
 .menu {
   padding: 0 220px;
   height: 51px;
