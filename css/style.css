@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'LatoLight';
   src: url("../assets/fonts/Lato-Light.eot"), url("../assets/fonts/Lato-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Lato-Light.woff") format("woff"), url("../assets/fonts/Lato-Light.ttf") format("truetype");
@@ -60,6 +61,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
@@ -438,6 +440,42 @@ a {
   }
 }
 
+.button-close {
+  width: 16px;
+  height: 16px;
+  color: #ffffff;
+  border-radius: 50%;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.button-cart-dropdown {
+  width: 225px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-family: 'LatoBold';
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
+}
+
+.button-cart-dropdown:hover {
+  color: #f16d7f;
+  border: 1px solid #f16d7f;
+}
+
 .cart {
   width: 32px;
   height: 38px;
@@ -454,6 +492,71 @@ a {
   .cart {
     margin-right: 0px;
   }
+}
+
+/*показывать при клике по корзине*/
+.cart-dropdown {
+  position: absolute;
+  padding: 20px;
+  top: 100px;
+  right: 0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  width: 262px;
+}
+
+.product-cart {
+  padding: 15px 0;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid rgba(237, 237, 237, 0.74);
+}
+
+.product-cart-description h3 {
+  margin: 10px 0;
+  font-family: 'LatoBold';
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.product-cart-description .stars {
+  color: #e4af48;
+}
+
+.product-cart-description p {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #f16d7f;
+}
+
+.product-cart-description .multiply {
+  font-size: 10px;
+}
+
+.goods-total {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: 'LatoBold';
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
 }
 
 .menu {
