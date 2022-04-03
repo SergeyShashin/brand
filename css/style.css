@@ -1094,15 +1094,15 @@ a {
 
 .footer .wrap-copiright-social {
   height: 79px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: (auto)[auto-fill];
-      grid-template-rows: repeat(auto-fill, auto);
-  -ms-flex-line-pack: center;
-      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer .wrap-copiright-social h3 {
@@ -1113,9 +1113,66 @@ a {
   color: #7a7a7a;
 }
 
+.footer .wrap-copiright-social .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .footer .wrap-copiright-social .social a {
+  position: relative;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
   width: 32px;
   height: 32px;
-  background-color: #ffffff;
+  background: #ffffff;
+}
+
+.footer .wrap-copiright-social .social a img {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  width: 16px;
+  height: 16px;
+  opacity: 0.3;
+}
+
+.footer .wrap-copiright-social .social a:hover {
+  background: #f16d7f;
+}
+
+@media (max-width: 768px) {
+  .footer .wrap-brand-company-information-shop {
+    padding: 25px;
+    -ms-grid-columns: 2fr;
+        grid-template-columns: 2fr;
+    grid-gap: 20px;
+  }
+  .footer .wrap-copiright-social {
+    padding: 25px;
+    height: 120px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
