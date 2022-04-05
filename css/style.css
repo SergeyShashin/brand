@@ -214,7 +214,7 @@ a {
 }
 
 .details:hover {
-  border: 1px solid #222222;
+  border: 1px solid #ef5b70;
 }
 
 .details[open] .summary-open {
@@ -292,7 +292,7 @@ a {
 }
 
 .details-ping:hover {
-  border: 1px solid #222222;
+  border: 1px solid #ef5b70;
 }
 
 .details-ping[open] summary {
@@ -367,7 +367,7 @@ a {
 }
 
 .input-search:hover {
-  outline: 1px solid #222222;
+  outline: 1px solid #ef5b70;
 }
 
 @media (max-width: 560px) {
@@ -392,7 +392,7 @@ a {
 }
 
 .input-subscribe:hover {
-  outline: 1px solid #222222;
+  outline: 1px solid #ffffff;
 }
 
 .input-subscribe:focus {
@@ -445,7 +445,7 @@ a {
 }
 
 .button-search:hover {
-  border: 1px solid #222222;
+  border: 1px solid #ef5b70;
 }
 
 .button-add-to-cart {
@@ -479,7 +479,7 @@ a {
 }
 
 .button-subscribe:hover {
-  border: 1px solid #222222;
+  border: 1px solid #ffffff;
 }
 
 @media (max-width: 560px) {
@@ -1590,6 +1590,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.ctr-arrow-left:hover {
+  background: #ef5b70;
   cursor: pointer;
 }
 
@@ -1613,6 +1617,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.ctr-arrow-right:hover {
+  background: #ef5b70;
   cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
