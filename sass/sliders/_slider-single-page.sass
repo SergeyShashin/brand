@@ -1,4 +1,15 @@
 .slider-single-page
+  position: relative
   height: 777px
   background-color: #f7f7f7
   border: 1px solid #eaeaea
+  &__image
+    display: flex
+    justify-content: center
+    width: 100%
+
+@media (max-width: 576px)
+  .slider-single-page
+    height: 400px
+    &__image
+      height: 90%
