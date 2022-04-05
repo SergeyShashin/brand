@@ -356,6 +356,70 @@ a {
   }
 }
 
+.form-characteristics {
+  margin-top: 60px;
+  width: 537px;
+}
+
+.wrap-details-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.wrap-details-input label {
+  font-family: 'LatoBold';
+  font-size: 14px;
+  font-weight: 700;
+  color: #2f2f2f;
+}
+
+.wrap-details-input details {
+  padding: 5px;
+  width: 144px;
+  height: 35px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #bcbcbc;
+}
+
+.wrap-details-input summary {
+  height: 35px;
+  list-style: none;
+}
+
+.wrap-details-input input {
+  padding: 5px 10px;
+  display: block;
+  width: 144px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #bcbcbc;
+}
+
+.wrap-details-input .red {
+  color: #ef5b70;
+}
+
+.wrap-details-input .green {
+  color: #00aa09;
+}
+
+.wrap-details-input .blue {
+  color: #3906f0;
+}
+
 .input-search {
   padding: 0 10px;
   width: 282px;
@@ -462,6 +526,26 @@ a {
 .button-add-to-cart:hover {
   border: 1px solid #f16d7f;
   background: #f16d7f;
+}
+
+.button-add-to-cart__single-page {
+  position: static;
+  width: 537px;
+  height: 55px;
+  font-family: 'LatoBold';
+  font-size: 16px;
+  font-weight: 700;
+  color: #ef5b70;
+  background: #ffffff;
+  border: 1px solid #ef5b70;
+}
+
+.button-add-to-cart__single-page img {
+  margin-right: 10px;
+}
+
+.button-add-to-cart__single-page:hover {
+  background: rgba(241, 109, 127, 0.3);
 }
 
 .button-subscribe {

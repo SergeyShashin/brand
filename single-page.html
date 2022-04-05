@@ -129,7 +129,7 @@
   <nav class="nav">
     <div class="container">
       <ul class="menu">
-        <li class="menu-link"><a href="#">Home</a></li>
+        <li class="menu-link"><a href="index.html">Home</a></li>
         <li class="menu-link"><a href="#">Man</a></li>
         <li class="menu-link"><a href="#">Women</a></li>
         <li class="menu-link"><a href="#">Kids</a></li>
@@ -196,7 +196,7 @@
     <div class="container breadcrumb__header-nav">
       <h2>New Arrivals</h2>
       <nav>
-        <a href="#">Home/</a>
+        <a href="index.html">Home/</a>
         <a href="#">Men/</a>
         <a class="breadcrumb__active" href="#">New Arrivals</a>
       </nav>
@@ -205,11 +205,12 @@
   <!-- /.breadcrumb -->
   <section class="slider-single-page">
     <div class="slider-single-page__image">
-      <img src="assets/img/t_shirt_white.png" alt="t_shirt_white.png">      
+      <img src="assets/img/t_shirt_white.png" alt="t_shirt_white.png">
     </div>
     <!-- /.slider-single-page__image -->
-    <div id="ctr-arrow-left" class="ctr-arrow-left"><</div>
-    <div id="ctr-arrow-right" class="ctr-arrow-right">></div>
+    <div id="ctr-arrow-left" class="ctr-arrow-left">
+      <</div> <div id="ctr-arrow-right" class="ctr-arrow-right">>
+    </div>
 
   </section>
   <!-- /.slider-single-page -->
@@ -219,14 +220,47 @@
       <h4>WOMEN COLLECTION</h4>
       <div class="divider"></div>
       <h3>Moschino Cheap And Chic</h3>
-      <p>Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
+      <p>Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate
+        collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather
+        than exceptional portals.</p>
       <div class="product-description__material-designer">
         <p>MATERIAL: <span>COTTON</span></p>
-        <p>DESIGNER: <span>BINBURHAN</span></p>        
+        <p>DESIGNER: <span>BINBURHAN</span></p>
       </div>
       <span id="price" class="price">$561</span>
       <div class="divider-gray"></div>
       <!-- /.product-description__material-designer -->
+      <form action="#" class="form-characteristics">
+        <div class="wrap-details-input">
+          <div class="wrap-details">
+            <label for="details-color">CHOOSE COLOR</label>
+            <details name="details-color" id="details-color">
+              <summary value="red"><span class="red">&#9632</span> Red</summary>
+              <summary value="green"><span class="green">&#9632</span> Green</summary>
+              <summary value="blue"><span class="blue">&#9632</span> Blue</summary>
+            </details>
+          </div>
+          <div class="wrap-details">
+            <label for="details-size">CHOOSE SIZE</label>
+            <details name="details-size" id="details-size">
+              <summary value="size-xxl">XXL</summary>
+              <summary value="size-xl">XL</summary>
+              <summary value="size-l">L</summary>
+              <summary value="size-m">M</summary>
+            </details>
+          </div>
+          <div class="wrap-input">
+            <label for="input-quantity">QUANTITY</label>
+            <input type="text" placeholder="2">
+          </div>
+        </div>
+        <!-- /.wrap-details-input -->
+        <button class="button-add-to-cart button-add-to-cart__single-page" type="submit">
+          <img src="assets/img/cart_ping.png" alt="cart_ping.png">
+          <span>Add to Cart</span>
+        </button>
+      </form>
+      <!-- /.form-characteristics -->
 
     </div>
     <!-- /.container product-description -->
@@ -373,7 +407,7 @@
         <div class="company">
           <h3>COMPANY</h3>
           <nav class="ul menu-footer">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">Shop</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">How It Works</a></li>
