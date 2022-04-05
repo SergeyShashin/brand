@@ -863,6 +863,12 @@ a {
   }
 }
 
+.slider-single-page {
+  height: 777px;
+  background-color: #f7f7f7;
+  border: 1px solid #eaeaea;
+}
+
 .category {
   padding: 100px 0;
   display: -ms-grid;
@@ -1493,6 +1499,7 @@ a {
 .breadcrumb {
   height: 148px;
   background-color: #f8f3f4;
+  margin-bottom: 0;
 }
 
 .breadcrumb__header-nav {
