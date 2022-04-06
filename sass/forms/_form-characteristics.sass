@@ -1,7 +1,9 @@
 .form-characteristics
   margin-top: 60px
   width: 537px
+  padding: 25px
 .wrap-details-input
+  position: relative
   display: flex
   justify-content: space-between
   margin-bottom: 30px
@@ -10,21 +12,31 @@
     font-size: 14px
     font-weight: 700
     color: #2f2f2f
-  details    
-    padding: 5px
+    margin-bottom: 10px
+  details
+    position: absolute
+    padding: 0 5px
     width: 144px
     height: 35px
     background: #ffffff
     border: 1px solid #eaeaea
     font-size: 13px
-    line-height: 24px
     font-weight: 400
     color: #bcbcbc
+    &:hover
+      border: 1px solid #ef5b70
+    summary
+      display: flex
+      align-items: center
+      height: 35px
+      list-style: none
     &[open]
-      // height: 200px
-  summary 
-    height: 35px
-    list-style: none
+      height: 150px
+      .arrow-down
+        display: none
+      .arrow-top
+        display: block
+
   input
     padding: 5px 10px
     display: block
@@ -36,10 +48,36 @@
     line-height: 24px
     font-weight: 400
     color: #bcbcbc
-   
+    &:hover
+      border: 1px solid #ef5b70
+    &:focus
+      outline-color: #f16d7f
+
   .red
+    font-size: 25px
     color: #ef5b70
+    margin-right: 5px
+    margin-bottom: 4px
   .green
     color: #00aa09
+    font-size: 25px
+    margin-right: 5px
+    margin-bottom: 4px
   .blue
     color: #3906f0
+    font-size: 25px
+    margin-right: 5px
+    margin-bottom: 4px
+
+@media (max-width: 576px)
+  .form-characteristics
+    margin-top: 20px
+    width: 100%
+    padding: 0px
+  .wrap-details-input
+    flex-direction: column
+    align-items: center
+    justify-content: space-around
+    details
+      right: 0
+
