@@ -1,4 +1,8 @@
 .form-enter
+  width: 390px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
   h3
     font-family: 'LatoBold'
     font-size: 13px
@@ -9,3 +13,23 @@
     font-size: 13px
     font-weight: 400
     color: #b3b2b2
+  label
+    font-family: 'LatoBold'
+    font-size: 12px
+    font-weight: 400
+    color: #222222
+    span
+      font-size: 17px
+      font-weight: 400
+      color: #ff0d0d
+  .error-message
+    font-family: 'LatoBold'
+    font-size: 13px
+    font-weight: 400
+    color: #ff0d0d
+
+@media (max-width: 768px)
+  .form-enter
+    margin-top: 30px
+    align-items: center
+    height: 350px

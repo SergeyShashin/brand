@@ -527,6 +527,20 @@ a {
   color: #222222;
 }
 
+.form-enter {
+  width: 390px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .form-enter h3 {
   font-family: 'LatoBold';
   font-size: 13px;
@@ -539,6 +553,36 @@ a {
   font-size: 13px;
   font-weight: 400;
   color: #b3b2b2;
+}
+
+.form-enter label {
+  font-family: 'LatoBold';
+  font-size: 12px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.form-enter label span {
+  font-size: 17px;
+  font-weight: 400;
+  color: #ff0d0d;
+}
+
+.form-enter .error-message {
+  font-family: 'LatoBold';
+  font-size: 13px;
+  font-weight: 400;
+  color: #ff0d0d;
+}
+
+@media (max-width: 768px) {
+  .form-enter {
+    margin-top: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 350px;
+  }
 }
 
 .input-search {
@@ -589,6 +633,22 @@ a {
   .input-subscribe {
     width: 80%;
   }
+}
+
+.input-email {
+  width: 100%;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  padding: 5px 10px;
+}
+
+.input-email:hover {
+  outline: 1px solid #ef5b70;
+}
+
+.input-email:focus {
+  outline: 1px solid #ef5b70;
 }
 
 .button {
@@ -750,6 +810,21 @@ a {
 
 .button-continue:hover {
   background: #f16d7f;
+}
+
+.button-forgot {
+  margin-left: 30px;
+  background: none;
+  border: none;
+  font-family: 'LatoBold';
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.button-forgot:hover {
+  color: #ef5b70;
 }
 
 .cart {
@@ -2043,12 +2118,33 @@ a {
 }
 
 .conditions__wrap .wrap-forms {
-  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .conditions__wrap details {
+    width: 100%;
+    border-bottom: 1px solid #e8e8e8;
+  }
+  .conditions__wrap details[open] {
+    height: 850px;
+  }
+  .conditions__wrap .wrap-forms {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 /*# sourceMappingURL=style.css.map */
