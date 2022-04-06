@@ -485,6 +485,62 @@ a {
   }
 }
 
+.form-check h3 {
+  font-family: 'LatoBold';
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.form-check p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #b3b2b2;
+}
+
+.form-check .checkout-as-guest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-check .register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.form-check label {
+  margin-left: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.form-enter h3 {
+  font-family: 'LatoBold';
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.form-enter p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #b3b2b2;
+}
+
 .input-search {
   padding: 0 10px;
   width: 282px;
@@ -677,6 +733,23 @@ a {
 .button-cart-dropdown:hover {
   color: #f16d7f;
   border: 1px solid #f16d7f;
+}
+
+.button-continue {
+  margin-top: 40px;
+  width: 180px;
+  height: 50px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  font-family: 'LatoBold';
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
+}
+
+.button-continue:hover {
+  background: #f16d7f;
 }
 
 .cart {
@@ -1934,5 +2007,48 @@ a {
   .divider-gray {
     width: 100%;
   }
+}
+
+.conditions {
+  padding: 90px 0;
+}
+
+.conditions__wrap details {
+  width: 100%;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.conditions__wrap details[open] {
+  height: 460px;
+}
+
+.conditions__wrap summary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  list-style: none;
+  font-family: 'LatoBold';
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.conditions__wrap summary:hover {
+  color: #ef5b70;
+}
+
+.conditions__wrap .wrap-forms {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
