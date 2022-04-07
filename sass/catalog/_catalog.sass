@@ -1,2 +1,143 @@
 .catalog
   display: flex
+  justify-content: space-between
+  padding: 50px 0
+.wrapper-filters-sorting-products
+  flex: 1
+  margin-left: 50px
+.filters
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  // justify-item: space-between
+  &__trending
+  h3
+    font-family: 'LatoBold'
+    font-size: 14px
+    line-height: 20px
+    font-weight: 700
+    text-transform: uppercase
+    color: #6f6e6e
+  nav
+    margin: 0
+    padding: 0
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    width: 160px
+    font-size: 14px
+    line-height: 26px
+    font-weight: 400
+    a
+      color: #6f6e6e
+      &:hover
+        color: #ef5b70
+    .floral, .lace
+      padding: 0 10px
+      border-left: 1px solid #dfdfdf
+      border-right: 1px solid #dfdfdf
+  &__size
+  .size-inputs
+    &__top-line
+      display: flex
+      align-items: center
+    &__bottom-line
+      display: flex
+      align-items: center
+    input
+      margin-right: 10px
+    label
+      margin-right: 25px
+      font-family: 'OpenSans'
+      font-size: 14px
+      line-height: 20px
+      font-weight: 400
+      text-transform: uppercase
+      color: #6f6e6e
+    #size-xl
+      margin-left: 16px
+    #size-xxl
+      margin-left: 1px
+  &__price
+    input[type="range"]
+      width: 100%
+    p
+      display: flex
+      justify-content: space-between
+      font-family: 'OpenSans'
+      font-size: 14px
+      line-height: 26px
+      font-weight: 400
+      color: #6f6e6e
+.sorting
+  height: 50px
+  background: #f3f3f3
+  display: flex
+  align-items: center
+  padding: 10px
+  font-size: 14px
+  font-weight: 400
+  color: #6f6e6e
+  .sort-by, .show
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 153px
+    height: 30px
+    background-color: #ffffff
+    padding: 5px
+  details
+    width: 60%
+    padding-left: 10px
+    border-left: 1px solid #ebebeb
+    .triangle-up
+      display: none
+      color: #6f6e6e
+    &[open]
+      .triangle-down
+        display: none
+        color: #6f6e6e
+      .triangle-up
+        display: inline
+  summary
+    display: flex
+    justify-content: space-between
+    list-style: none
+    color: #6f6e6e
+  .show
+    margin-left: 10px
+
+@media (max-width: 1240px)
+  .filters
+    grid-template-columns: 1fr
+    grid-template-rows: 1fr 1fr
+    grid-gap: 20px
+    nav
+      width: 50%
+      justify-content: space-between
+      .floral, .lace
+        padding: 0
+        border: none
+    .size-inputs
+      display: flex
+      #size-xl
+        margin-left: 0
+      #size-xxl
+        margin-left: 0
+
+@media (max-width: 992px)
+  .filters
+    nav
+      width: 100%
+
+@media (max-width: 768px)
+  .catalog
+    flex-direction: column
+  .wrapper-filters-sorting-products
+    margin-left: 0
+
+@media (max-width: 480px)
+  .catalog
+    padding: 15px
+  .filters
+  .size-inputs
+    flex-wrap: wrap
