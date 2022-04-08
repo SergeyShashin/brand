@@ -1398,6 +1398,13 @@ a {
   margin-bottom: 70px;
 }
 
+.products__product-page {
+  -ms-grid-columns: (auto)[auto-fill];
+      grid-template-columns: repeat(auto-fill, auto);
+  grid-gap: 30px;
+  margin-top: 50px;
+}
+
 @media (max-width: 768px) {
   .products {
     -webkit-box-pack: center;
@@ -2457,9 +2464,15 @@ a {
   .catalog {
     padding: 15px;
   }
-  .size-inputs {
+  .filters .size-inputs {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .filters .size-inputs #size-xl {
+    margin-left: 16px;
+  }
+  .filters .size-inputs #size-xxl {
+    margin-left: 1px;
   }
 }
 
