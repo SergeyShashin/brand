@@ -890,6 +890,22 @@ a {
   }
 }
 
+.button-view-all {
+  width: 150px;
+  height: 44px;
+  background-color: #ffffff;
+  border: 1px solid #ef5b70;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ef5b70;
+}
+
+.button-view-all:hover {
+  color: #fff;
+  background: #ef5b70;
+}
+
 .cart {
   width: 32px;
   height: 38px;
@@ -1403,6 +1419,14 @@ a {
       grid-template-columns: repeat(auto-fill, auto);
   grid-gap: 30px;
   margin-top: 50px;
+}
+
+@media (max-width: 992px) {
+  .products {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2408,7 +2432,17 @@ a {
 }
 
 .sorting .show {
-  margin-left: 10px;
+  margin-left: 10px\;;
+}
+
+.wrapper-pagination-view-all {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 @media (max-width: 1240px) {
@@ -2445,6 +2479,19 @@ a {
 @media (max-width: 992px) {
   .filters nav {
     width: 100%;
+  }
+  .wrapper-pagination-view-all {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    height: 150px;
   }
 }
 
@@ -2540,5 +2587,41 @@ a {
   .side-bar summary {
     width: 100%;
   }
+}
+
+.pagination {
+  padding: 0px;
+  margin: 0px;
+  width: 291px;
+  background-color: #ffffff;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+}
+
+.pagination .page-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 44px;
+  margin: 0px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #c4c4c4;
+}
+
+.pagination .page-link:hover {
+  color: #ef5b70;
+}
+
+.pagination .page-link:active {
+  color: #ef5b70;
+}
+
+.pagination .page-link-activ {
+  color: #ef5b70;
 }
 /*# sourceMappingURL=style.css.map */

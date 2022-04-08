@@ -104,7 +104,12 @@
     list-style: none
     color: #6f6e6e
   .show
-    margin-left: 10px
+    margin-left: 10px\
+
+.wrapper-pagination-view-all
+  margin-top: 40px
+  display: flex
+  justify-content: space-between
 
 @media (max-width: 1240px)
   .filters
@@ -128,6 +133,11 @@
   .filters
     nav
       width: 100%
+  .wrapper-pagination-view-all
+    flex-direction: column
+    align-items: center
+    justify-content: space-evenly
+    height: 150px
 
 @media (max-width: 768px)
   .catalog
