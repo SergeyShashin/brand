@@ -825,6 +825,10 @@ a {
           align-items: center;
 }
 
+.button-close_shopping-cart-page {
+  background: #c0c0c0;
+}
+
 .button-cart-dropdown {
   display: block;
   text-align: center;
@@ -2676,5 +2680,126 @@ a {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+}
+
+.shopping-cart {
+  padding: 80px 0;
+}
+
+.shopping-cart table {
+  font-weight: 400;
+  color: #656565;
+}
+
+.shopping-cart .table {
+  border: none;
+  border-collapse: separate;
+}
+
+.shopping-cart tr {
+  border-color: #eaeaea;
+}
+
+.shopping-cart th {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  color: #222222;
+}
+
+.shopping-cart .td-product-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.shopping-cart .td-product-details__text {
+  margin-left: 20px;
+}
+
+.shopping-cart .td-product-details h3 {
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.shopping-cart .td-product-details p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #575757;
+}
+
+.shopping-cart .td-product-details span {
+  font-weight: 300;
+  color: #6f6e6e;
+}
+
+.shopping-cart .th-unit-price {
+  text-align: center;
+}
+
+.shopping-cart .td-unit-price {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.shopping-cart .th-quantity {
+  text-align: center;
+}
+
+.shopping-cart .td-quantity {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.shopping-cart .td-quantity input {
+  width: 54px;
+  padding: 0 10px;
+  border: 1px solid #eaeaea;
+  text-align: center;
+}
+
+.shopping-cart .th-shipping {
+  text-align: center;
+}
+
+.shopping-cart .td-shipping {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.shopping-cart .th-subtotal {
+  text-align: center;
+}
+
+.shopping-cart .td-subtotal {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.shopping-cart .th-action {
+  text-align: center;
+}
+
+.shopping-cart .td-action {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.shopping-cart .td-action .wrap-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
