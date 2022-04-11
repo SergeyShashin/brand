@@ -968,14 +968,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50px;
-  padding: 0 20px;
+  padding: 10px 20px;
   background-color: #f16d7f;
   font-family: 'LatoBold';
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
+  text-align: center;
 }
 
 .button-checkout:hover {
@@ -3014,6 +3014,19 @@ a {
   color: #f16d7f;
 }
 
+@media (max-width: 1240px) {
+  .wrapper-adress-discount-total {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 700px;
+  }
+}
+
 @media (max-width: 768px) {
   .shopping-cart .table-default {
     display: none;
@@ -3036,10 +3049,31 @@ a {
 
 @media (max-width: 576px) {
   .wrapper-buttons-clear-continue {
+    padding: 0 15px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 120px;
+  }
+  .wrapper-adress-discount-total {
+    padding: 0 15px;
+  }
+  .wrapper-adress-discount-total details {
+    width: 100%;
+  }
+  .wrapper-adress-discount-total input {
+    width: 100%;
+  }
+  .wrapper-adress-discount-total form {
+    width: 100%;
+  }
+  .wrapper-adress-discount-total .grand-total {
+    width: 100%;
+    height: 240px;
   }
 }
 /*# sourceMappingURL=style.css.map */
