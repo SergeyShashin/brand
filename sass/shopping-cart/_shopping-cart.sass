@@ -6,15 +6,19 @@
   .table
     border: none
     border-collapse: separate
+  .table-media768px
+    display: none
   thead
   tr
     border-color: #eaeaea
+    &:hover
+      background: #f8f3f4
   th
     font-size: 13px
     font-weight: 700
     text-transform: uppercase
     letter-spacing: -0.015em
-    color: #222222    
+    color: #222222
   .th-product-details
   .td-product-details
     display: flex
@@ -22,16 +26,16 @@
     justify-content: flex-start
     &__text
       margin-left: 20px
-    h3 
+    h3
       font-size: 13px
       font-weight: 400
       text-transform: uppercase
       color: #222222
-    p 
+    p
       font-size: 13px
       font-weight: 400
       color: #575757
-    span 
+    span
       font-weight: 300
       color: #6f6e6e
   .th-unit-price
@@ -49,6 +53,10 @@
       padding: 0 10px
       border: 1px solid #eaeaea
       text-align: center
+      &:hover
+        border-color: #f16d7f
+      &:focus
+        outline: #f16d7f
   .th-shipping
     text-align: center
   .td-shipping
@@ -66,4 +74,17 @@
     vertical-align: middle
     .wrap-button
       display: flex
+      justify-content: center
+
+@media (max-width: 768px)
+  .shopping-cart
+    .table-default
+      display: none
+    .table-media768px
+      display: table
+      tr
+        border: transparent
+    .th-product-details
+      text-align: center
+    .td-product-details
       justify-content: center
