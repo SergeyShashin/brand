@@ -76,6 +76,87 @@
       display: flex
       justify-content: center
 
+.wrapper-buttons-clear-continue
+  display: flex
+  justify-content: space-between
+  margin-top: 45px
+  margin-bottom: 50px
+
+.wrapper-adress-discount-total
+  font-size: 13px
+  font-weight: 300
+  color: #b1b1b1
+  display: flex
+  justify-content: space-between
+  h3
+    font-family: 'LatoBold'
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+    color: #222222
+  p
+    font-size: 14px
+    font-weight: 300
+    color: #000000
+  details
+    width: 355px
+    background-color: #ffffff
+    border: 1px solid #eaeaea
+    &[open]
+      .control-down
+        display: none
+      .control-up
+        display: block
+  summary
+    padding: 0 20px
+    height: 45px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    list-style-type: none
+    font-size: 13px
+    font-weight: 300
+    color: #b1b1b1
+  input
+    margin-top: 20px
+    display: block
+    width: 355px
+    padding: 0 20px
+    height: 45px
+    background-color: #ffffff
+    border: 1px solid #eaeaea
+    font-size: 13px
+    font-weight: 300
+    color: #b1b1b1
+
+  .grand-total
+    width: 360px
+    height: 214px
+    background-color: #f5f3f3
+    padding: 40px
+    &__numbers
+      padding-bottom: 20px
+      text-align: right
+      border-bottom: 1px solid #e2e2e2
+      margin-bottom: 20px
+    p
+      font-family: 'LatoBold'
+      font-size: 11px
+      font-weight: 400
+      text-transform: uppercase
+      color: #4a4a4a
+      span
+        margin-left: 20px
+    h3
+      font-family: 'LatoBold'
+      font-size: 16px
+      font-weight: 700
+      text-transform: uppercase
+      color: #222222
+      span
+        margin-left: 20px
+        color: #f16d7f
+
 @media (max-width: 768px)
   .shopping-cart
     .table-default
@@ -88,3 +169,7 @@
       text-align: center
     .td-product-details
       justify-content: center
+
+@media (max-width: 576px)
+  .wrapper-buttons-clear-continue
+    flex-direction: column
