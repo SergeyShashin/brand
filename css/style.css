@@ -1133,6 +1133,20 @@ a {
   }
 }
 
+.menu-link {
+  font-family: 'LatoBold';
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.menu-link a:hover {
+  color: #f16d7f;
+}
+
 /*Включать при клике по меню*/
 .menu-mega {
   display: none;
@@ -1217,20 +1231,6 @@ a {
 }
 
 .menu-footer li:hover a {
-  color: #f16d7f;
-}
-
-.menu-link {
-  font-family: 'LatoBold';
-  list-style-type: none;
-  text-decoration: none;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #222222;
-}
-
-.menu-link a:hover {
   color: #f16d7f;
 }
 
