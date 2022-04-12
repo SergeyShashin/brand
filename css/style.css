@@ -231,7 +231,6 @@ a {
   height: 500px;
   z-index: 1;
   top: 38px;
-  width: 262px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -239,6 +238,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -271,6 +273,10 @@ a {
 
 .details[open] .summary-open a:hover {
   color: #f16d7f;
+}
+
+.details[open] .summary-open_my-account {
+  height: 200px;
 }
 
 .details[open] .control-down {
