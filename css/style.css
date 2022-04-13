@@ -1177,7 +1177,7 @@ a {
   color: #f16d7f;
 }
 
-.menu .menu-link:hover {
+.menu .menu-link:hover a {
   color: #f16d7f;
 }
 
