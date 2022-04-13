@@ -1,5 +1,5 @@
 .menu
-  position: relative
+  // position: relative
   padding: 0 220px
   // height: 51px
   height: 100%
@@ -8,13 +8,79 @@
   align-items: center
   flex-wrap: wrap
   margin: 0
+  list-style-type: none
+  text-decoration: none
+  font-family: 'LatoBold'
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+  color: #222222
+  .menu-link
+    position: relative
+    .menu-mega
+      display: none
+      width: 846px
+      position: absolute
+      z-index: 3
+      background-color: #ffffff
+      border-radius: 5px
+      justify-content: space-evenly
+      .menu-block
+        flex: 1
+        padding: 25px
+        h3
+          font-family: 'LatoBold'
+          font-size: 14px
+          font-weight: 400
+          text-transform: uppercase
+          letter-spacing: 0.025em
+          color: #232323
+        ul
+          border-top: 1px solid #e8e8e8
+          padding-left: 0px
+          list-style-type: none
+          text-decoration: none
+        a
+          font-size: 14px
+          line-height: 28px
+          font-weight: 400
+          letter-spacing: 0.025em
+          color: #646464
+          &:hover
+            color: #f16d7f
+    &:hover
+      color: #f16d7f
+      .menu-mega
+        display: flex
+
+@media (max-width: 1240px)
+  .menu    
+    .menu-link
+      .menu-mega        
+        width: 700px
 
 @media (max-width: 992px)
   .menu
     margin: 0
     padding: 0
+    .menu-link
+      .menu-mega        
+        flex-direction: column
+        justify-content: flex-start
+        width: 300px
+        height: 1000px
+        .menu-block
+          flex: none
+
 
 @media (max-width: 480px)
   .menu
     justify-content: space-between
     flex-direction: column
+    .menu-link
+      .menu-mega
+        left: -110px
+        width: 260px        
+        
+
+
