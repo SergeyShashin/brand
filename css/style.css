@@ -1953,19 +1953,12 @@ a {
   width: 32px;
   height: 32px;
   background: #ffffff;
-}
-
-.footer .wrap-copiright-social .social a img {
-  display: block;
-  position: absolute;
-  z-index: 2;
-  width: 16px;
-  height: 16px;
-  opacity: 0.3;
+  color: #b2b2b2;
 }
 
 .footer .wrap-copiright-social .social a:hover {
   background: #f16d7f;
+  color: #ffff;
 }
 
 @media (max-width: 768px) {
