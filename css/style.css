@@ -1010,7 +1010,7 @@ a {
 
 /*показывать при клике по корзине*/
 .cart-dropdown {
-  display: block;
+  display: none;
   position: absolute;
   z-index: 3;
   padding: 20px;
