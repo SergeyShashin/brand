@@ -18,13 +18,16 @@
   .menu-link
     position: relative
     .menu-mega
-      display: none
+      // display: none
+      display: flex
       width: 846px
+      height: 0px
       position: absolute
-      z-index: 3
+      z-index: -1
       background-color: #ffffff
       border-radius: 5px
       justify-content: space-evenly
+      transition: 0.2s
       .menu-block
         flex: 1
         padding: 25px
@@ -52,7 +55,9 @@
       a
         color: #f16d7f
       .menu-mega
-        display: flex
+        // display: flex
+        height: 350px
+        z-index: 3
 
 @media (max-width: 1240px)
   .menu    

@@ -234,6 +234,8 @@ a {
 }
 
 .details[open] .summary-open {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   background: #ffffff;
   padding: 20px;
   position: absolute;
@@ -1140,15 +1142,20 @@ a {
 }
 
 .menu .menu-link .menu-mega {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 846px;
+  height: 0px;
   position: absolute;
-  z-index: 3;
+  z-index: -1;
   background-color: #ffffff;
   border-radius: 5px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .menu .menu-link .menu-mega .menu-block {
@@ -1191,9 +1198,8 @@ a {
 }
 
 .menu .menu-link:hover .menu-mega {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  height: 350px;
+  z-index: 3;
 }
 
 @media (max-width: 1240px) {
@@ -1586,6 +1592,8 @@ a {
 }
 
 .product:hover .product__hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
