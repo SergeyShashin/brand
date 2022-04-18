@@ -1166,6 +1166,10 @@ a {
   padding: 25px;
 }
 
+.menu .menu-link .menu-mega .menu-block .banner-man {
+  display: none;
+}
+
 .menu .menu-link .menu-mega .menu-block h3 {
   font-family: 'LatoBold';
   font-size: 14px;
@@ -1201,6 +1205,10 @@ a {
 .menu .menu-link:hover .menu-mega {
   height: 350px;
   z-index: 3;
+}
+
+.menu .menu-link:hover .menu-mega .banner-man {
+  display: block;
 }
 
 @media (max-width: 1240px) {
@@ -2434,6 +2442,10 @@ a {
   margin-right: 10px;
 }
 
+.filters .size-inputs input:hover {
+  cursor: pointer;
+}
+
 .filters .size-inputs label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2447,6 +2459,10 @@ a {
   font-weight: 400;
   text-transform: uppercase;
   color: #6f6e6e;
+}
+
+.filters .size-inputs label:hover {
+  cursor: pointer;
 }
 
 .filters .size-inputs #size-xl {

@@ -1,8 +1,5 @@
 .menu
-  // position: relative
-  // background: #fff
   padding: 0 220px
-  // height: 51px
   height: 100%
   display: flex
   justify-content: space-evenly
@@ -19,7 +16,6 @@
   .menu-link
     position: relative
     .menu-mega
-      // display: none
       display: flex
       width: 846px
       height: 0px
@@ -32,6 +28,8 @@
       .menu-block
         flex: 1
         padding: 25px
+        .banner-man
+          display: none
         h3
           font-family: 'LatoBold'
           font-size: 14px
@@ -56,9 +54,10 @@
       a
         color: #f16d7f
       .menu-mega
-        // display: flex
         height: 350px
-        z-index: 3
+        z-index: 3        
+        .banner-man
+          display: block
 
 @media (max-width: 1240px)
   .menu    
