@@ -1101,6 +1101,7 @@ a {
           align-items: center;
   height: 51px;
   border-top: 1px solid #ececec;
+  background: #fff;
 }
 
 @media (max-width: 480px) {
@@ -2434,10 +2435,15 @@ a {
 }
 
 .filters .size-inputs label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 25px;
   font-family: 'OpenSans';
   font-size: 14px;
-  line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
   color: #6f6e6e;
